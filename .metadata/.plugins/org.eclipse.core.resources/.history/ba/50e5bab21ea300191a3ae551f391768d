@@ -1,0 +1,10 @@
+package kr.co.sbaek76.ex11_abstract;
+
+abstract class Abs{
+	public int a() {return 0;};
+	
+}
+
+public class ex11_abstract {
+	
+}

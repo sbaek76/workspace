@@ -1,0 +1,8 @@
+package kr.co.sbaek76.ex11.newPack;
+
+public class newPack {
+	public static void main(String[] args) {
+		newPack a = new newPack();
+		a.clone();
+	}
+}

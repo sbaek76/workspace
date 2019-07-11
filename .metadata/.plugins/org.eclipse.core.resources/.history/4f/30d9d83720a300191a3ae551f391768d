@@ -1,0 +1,27 @@
+package kr.co.sbaek76.ex11_abstract;
+import java.lang.*;
+
+abstract class Abs{
+	public abstract int a();
+	
+	public void extreme() {
+		java.lang.System.out.println("hi");
+	}
+}
+
+class B extends Abs {
+
+	@Override
+	public int a() {
+		// TODO Auto-generated method stub
+		java.lang.System.out.println("success.");
+		return 0;
+	}
+}
+
+public class ex11_abstract {
+	public static void main(String[] args) {
+		B b = new B();
+		b.a();
+	}
+}

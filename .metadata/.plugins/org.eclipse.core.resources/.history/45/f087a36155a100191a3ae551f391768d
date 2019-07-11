@@ -1,0 +1,32 @@
+package kr.co.sbaek76.ex10_amazingcalc;
+
+class Calc {
+	double[] operands;
+	
+	public Calc(double[] operands) {
+		this.operands = operands;
+	}
+	
+	public double sum() {
+		double total = 0;
+		for(double i : this.operands) {
+			total = total + i;
+		}
+		return total;
+	}
+	
+	public double avg() {
+		double total = 0;
+		for(double i : this.operands) {
+			total = total + i;
+		}
+		return total / this.operands.length;
+	}
+}
+
+public class ex10_amazingcalc {
+	public static void main(String[] args) {
+		Calc c = new Calc(new double[]{1, 2, 3, 4});
+		System.out.println(c.avg());
+	}
+}

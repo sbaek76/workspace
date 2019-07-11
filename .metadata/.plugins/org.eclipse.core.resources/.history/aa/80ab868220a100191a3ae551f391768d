@@ -1,0 +1,45 @@
+package kr.co.sbaek76.ex9_classExtends;
+
+class Calculator{
+	int left, right;
+	
+	//public Calculator() {};
+	
+	public Calculator(int left, int right) {
+		this.left = left;
+		this.right = right;
+	}
+	
+	public int add(){
+		return (this.left + this.right);
+	}
+	
+	public int subtract() {
+		return (this.left - this.right);
+	}
+	
+	public int multiply() {
+		return (this.left * this.right);
+	}
+	
+	public int divide() {
+		return (this.left / this.right);
+	}
+}
+
+class Calculator2 extends Calculator {
+	public Calculator2(int left, int right) {
+		super(left, right);
+	}
+	
+	public int avg() {
+		return (divide());
+	}
+}
+
+public class ex9_classExtends {
+	public static void main(String[] args) {
+		Calculator2 c1 = new Calculator2(9,3); 
+		System.out.println(c1.avg());
+	}
+}

@@ -1,0 +1,18 @@
+package kr.co.sbaek76.ex11_abstract;
+
+abstract class Abs{
+	public abstract int a();
+}
+
+class B extends Abs {
+
+	@Override
+	public int a() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+public class ex11_abstract {
+	
+}
